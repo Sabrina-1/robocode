@@ -44,14 +44,13 @@ setBack(100);}
 		data[a].Nome = "";
 	}
 	
-	setBodyColor(Color.yellow);
+	setBodyColor(Color.cyan);
 	setGunColor(Color.black);
-	setRadarColor(Color.yellow);
+	setRadarColor(Color.cyan);
 	setBulletColor(Color.white);
 	setScanColor(Color.white);
 	
 	setAdjustRadarForGunTurn(true);
-	setAdjustRadarForRobotTurn(true);
 	setAdjustGunForRobotTurn(true);
 
 	while (true) { 
@@ -124,7 +123,7 @@ setBack(100);}
 			if (mudancadaenergia > 0 && mudancadaenergia <= 3) {
 
 				movidirecao = -movidirecao; 
-				setAhead((e.getDistance() / 8 + 25.0) * movidirecao);
+				setAhead((e.getDistance() / 8 + 20.0) * movidirecao);
 			}
 
 		}
